@@ -1,0 +1,3 @@
+/home/hao/bth_tetris/src/CMakeFiles/rebuild_cache.dir
+/home/hao/bth_tetris/src/CMakeFiles/edit_cache.dir
+/home/hao/bth_tetris/src/CMakeFiles/mm.dir

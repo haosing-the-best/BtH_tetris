@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/src.dir/game.cpp.o CMakeFiles/src.dir/game_object.cpp.o CMakeFiles/src.dir/glad.c.o CMakeFiles/src.dir/main.cpp.o CMakeFiles/src.dir/resource_manager.cpp.o CMakeFiles/src.dir/shader.cpp.o CMakeFiles/src.dir/sprite_renderer.cpp.o CMakeFiles/src.dir/texture.cpp.o  -o src  -ldl ../glfw-3.3.2/src/libglfw3.a -lrt -lm -ldl -lX11 -lpthread 

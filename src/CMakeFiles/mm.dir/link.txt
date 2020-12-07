@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mm.dir/game.o CMakeFiles/mm.dir/game_object.o CMakeFiles/mm.dir/main.o CMakeFiles/mm.dir/resource_manager.o CMakeFiles/mm.dir/shader.o CMakeFiles/mm.dir/sprite_renderer.o CMakeFiles/mm.dir/texture.o  -o mm  -ldl -lglfw 
