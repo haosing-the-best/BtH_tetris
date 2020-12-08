@@ -5,38 +5,50 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/glad.c.o
  /home/hao/bth_tetris/src/glad.c
  include/KHR/khrplatform.h
  include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o
+ /home/hao/bth_tetris/src/block_manager.cpp
+ glfw-3.3.2/include/GLFW/glfw3.h
+ include/KHR/khrplatform.h
+ include/block_manager.h
+ include/glad/glad.h
+ include/my_header.h
+ include/variable.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o
  /home/hao/bth_tetris/src/game.cpp
  glfw-3.3.2/include/GLFW/glfw3.h
  include/KHR/khrplatform.h
+ include/block_manager.h
  include/game.h
  include/glad/glad.h
+ include/key_manager.h
  include/my_header.h
  include/resource_manager.h
+ include/scene_manager.h
  include/shader.h
  include/sprite_renderer.h
  include/texture.h
  include/timer.h
  include/variable.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o
- /home/hao/bth_tetris/src/game_object.cpp
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o
+ /home/hao/bth_tetris/src/key_manager.cpp
  glfw-3.3.2/include/GLFW/glfw3.h
  include/KHR/khrplatform.h
- include/game_object.h
+ include/block_manager.h
  include/glad/glad.h
+ include/key_manager.h
  include/my_header.h
- include/shader.h
- include/sprite_renderer.h
- include/texture.h
  include/variable.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o
  /home/hao/bth_tetris/src/main.cpp
  glfw-3.3.2/include/GLFW/glfw3.h
  include/KHR/khrplatform.h
+ include/block_manager.h
  include/game.h
  include/glad/glad.h
+ include/key_manager.h
  include/my_header.h
  include/resource_manager.h
+ include/scene_manager.h
  include/shader.h
  include/sprite_renderer.h
  include/texture.h
@@ -51,6 +63,19 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o
  include/resource_manager.h
  include/shader.h
  include/stb_image.h
+ include/texture.h
+ include/variable.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o
+ /home/hao/bth_tetris/src/scene_manager.cpp
+ glfw-3.3.2/include/GLFW/glfw3.h
+ include/KHR/khrplatform.h
+ include/block_manager.h
+ include/glad/glad.h
+ include/my_header.h
+ include/resource_manager.h
+ include/scene_manager.h
+ include/shader.h
+ include/sprite_renderer.h
  include/texture.h
  include/variable.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/shader.cpp.o
@@ -78,4 +103,13 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o
  include/glad/glad.h
  include/my_header.h
  include/texture.h
+ include/variable.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o
+ /home/hao/bth_tetris/src/timer.cpp
+ glfw-3.3.2/include/GLFW/glfw3.h
+ include/KHR/khrplatform.h
+ include/block_manager.h
+ include/glad/glad.h
+ include/my_header.h
+ include/timer.h
  include/variable.h

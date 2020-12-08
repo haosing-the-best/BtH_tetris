@@ -5,37 +5,49 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/glad.c.o: src/glad.c
 src/CMakeFiles/BtH_tetris-0.0.out.dir/glad.c.o: include/KHR/khrplatform.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/glad.c.o: include/glad/glad.h
 
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: src/block_manager.cpp
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: include/block_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: include/my_header.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o: include/variable.h
+
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: src/game.cpp
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/block_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/game.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/key_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/my_header.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/resource_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/scene_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/shader.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/sprite_renderer.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/texture.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/timer.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o: include/variable.h
 
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: src/game_object.cpp
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/KHR/khrplatform.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/game_object.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/glad/glad.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/my_header.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/shader.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/sprite_renderer.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/texture.h
-src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o: include/variable.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: src/key_manager.cpp
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/block_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/key_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/my_header.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o: include/variable.h
 
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: src/main.cpp
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/block_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/game.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/key_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/my_header.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/resource_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/scene_manager.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/shader.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/sprite_renderer.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o: include/texture.h
@@ -52,6 +64,19 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o: include/shader.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o: include/stb_image.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o: include/texture.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o: include/variable.h
+
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: src/scene_manager.cpp
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/block_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/my_header.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/resource_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/scene_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/shader.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/sprite_renderer.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/texture.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o: include/variable.h
 
 src/CMakeFiles/BtH_tetris-0.0.out.dir/shader.cpp.o: src/shader.cpp
 src/CMakeFiles/BtH_tetris-0.0.out.dir/shader.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
@@ -78,4 +103,13 @@ src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o: include/glad/glad.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o: include/my_header.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o: include/texture.h
 src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o: include/variable.h
+
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: src/timer.cpp
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: glfw-3.3.2/include/GLFW/glfw3.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/KHR/khrplatform.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/block_manager.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/glad/glad.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/my_header.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/timer.h
+src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o: include/variable.h
 

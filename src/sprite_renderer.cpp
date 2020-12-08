@@ -20,7 +20,7 @@ SpriteRenderer::~SpriteRenderer()
 {
 }
 
-void SpriteRenderer::DrawSprite(Texture2D &texture, glm::vec2 position, glm::vec2 size, float rotate, glm::vec3 color)
+void SpriteRenderer::DrawSprite(unsigned int ID, glm::vec2 position, glm::vec2 size, float rotate, glm::vec3 color)
 {
     // prepare transformations
     this->shader.Use();
@@ -39,7 +39,7 @@ void SpriteRenderer::DrawSprite(Texture2D &texture, glm::vec2 position, glm::vec
     this->shader.SetVector3f("spriteColor", color);
 
     glActiveTexture(GL_TEXTURE0);
-    texture.Bind();
+    glBindTexture(GL_TEXTURE_2D, ID);
 
     glBindVertexArray(this->quadVAO);
     glDrawArrays(GL_TRIANGLES, 0, 6);

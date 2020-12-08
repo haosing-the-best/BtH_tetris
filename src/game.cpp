@@ -13,11 +13,10 @@
 
 
 // Game-related State data
-SpriteRenderer  *Renderer;
 Game* Game::my_game = NULL;
 bool                    Keys[1024];
 Game::Game() 
-    : State(GAME_ACTIVE), Width(1200), Height(900)
+    : State(GAME_ACTIVE), Width(WIDTH), Height(HEIGHT)
 { 
 }
 
@@ -25,7 +24,6 @@ Game::~Game()
 {
     glfwTerminate();
     ResourceManager::Clear();    
-    delete Renderer;
 }
 
 bool Game::Init()
@@ -34,6 +32,7 @@ bool Game::Init()
     if(!my_game->Init_gl())		return false;
     if(!my_game->Init_Shader())		return false;
     if(!my_game->Load_Texture())	return false;
+    if(!my_game->Init_tools())   	return false;
     return my_game;
 }
 bool Game::Init_gl()
@@ -60,8 +59,8 @@ bool Game::Init_gl()
         return false;
     }
 
-    glfwSetKeyCallback(window, key_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetKeyCallback(window, key_callback);
 
     // OpenGL configuration
     // --------------------
@@ -77,68 +76,85 @@ bool Game::Init_Shader()
     ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
     ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
     // set render-specific controls
-    Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     return true;
 }
 bool Game::Load_Texture()
 {
-    ResourceManager::LoadTexture("../resource/awesomeface.png", true, "face");
     ResourceManager::LoadTexture("../resource/jojo_background.jpg", false, "background");
     ResourceManager::LoadTexture("../resource/block.png", false, "block");
     return true;
 }
 
+bool Game::Init_tools()
+{
+    my_timer = new Timer;
+    if(my_timer==NULL)
+    {
+	cout<<"failed to init timer"<<endl;
+	return false;
+    }
+    my_scene = new scene_manager;
+    if(my_scene==NULL)
+    {
+        cout<<"failed to init scene_manager"<<endl;
+        return false;
+    }
+    my_key = new key_manager;
+    if(my_key == NULL)
+    {
+        cout<<"failed to init key_manager"<<endl;
+        return false;
+    }
+
+    Block_manager * temp = new Block_manager;
+    if(temp == NULL)
+    {
+	cout<<"failed to init block_manager"<<endl;
+        return false;
+    }
+    my_scene->get_my_block(temp);
+    my_timer->get_my_block(temp);
+    my_key->get_my_block(temp);
+    temp->init();
+    SpriteRenderer* Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
+    if(Renderer == NULL)
+    {
+        cout<<"failed to init sprite_renderer"<<endl;
+        return false;
+    }
+    my_scene->get_my_renderer(Renderer);
+    my_scene->init();
+    my_timer->init_timer();
+    return true;
+}
+
 int Game::run()
 {
-    float deltaTime = 0.0f;
-    float lastFrame = 0.0f;
+    
     while (!glfwWindowShouldClose(my_game->window))
     {
-        // calculate delta time
-        // --------------------
-        float currentFrame = glfwGetTime();
-        deltaTime = currentFrame - lastFrame;
-        lastFrame = currentFrame;
-        glfwPollEvents();
+	//timer
+	my_game->my_timer->timer_event();
+	glfwPollEvents();
 
-        // manage user input
-        // -----------------
-        my_game->ProcessInput(deltaTime);
+	//keyboard 
+	my_game->my_key->key_event(my_game->my_timer->get_deltaTime(),Keys);	
 
-        // update game state
-        // -----------------
-        my_game->Update(deltaTime);
-
-        // render
-        // ------
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        my_game->Render();
+	//render
+	my_game->my_scene->render();
 
         glfwSwapBuffers(my_game->window);
         glfwPollEvents();
     }
+
     return 0;
 }
-void Game::Update(float dt)
-{
-    
-}
 
-void Game::ProcessInput(float dt)
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-   
-}
-
-void Game::Render()
-{
-    Renderer->DrawSprite(ResourceManager::GetTexture("face"), glm::vec2(200.0f, 200.0f), glm::vec2(300.0f, 400.0f), 45.0f, glm::vec3(0.0f, 1.0f, 0.0f));
-    Renderer->DrawSprite(ResourceManager::GetTexture("background"), glm::vec2(0.0f,0.0f),glm::vec2(Width,Height),0.0f,glm::vec3(1.0f,1.0f,1.0f));
-    float bs = 25.0;
-    for(int r=0;r<20;r++)
-	for(int c=0;c<10;c++)
-    Renderer->DrawSprite(ResourceManager::GetTexture("block"), glm::vec2(150.0f+c*bs,200.0f+r*bs),glm::vec2(25.0f,25.0f),0.0f,(r+c)&1?glm::vec3(0.0f,0.0f,0.0f):glm::vec3(0.3f,0.3f,0.3f));
-
+    // make sure the viewport matches the new window dimensions; note that width and 
+    // height will be significantly larger than specified on retina displays.
+    glViewport(0, 0, width, height);
 }
 
 
@@ -155,13 +171,5 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
             Keys[key] = false;
     }
 }
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-    // make sure the viewport matches the new window dimensions; note that width and 
-    // height will be significantly larger than specified on retina displays.
-    glViewport(0, 0, width, height);
-}
-
 
 

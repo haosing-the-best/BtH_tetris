@@ -16,13 +16,16 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "glfw-3.3.2/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hao/bth_tetris/src/block_manager.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o"
   "/home/hao/bth_tetris/src/game.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.o"
-  "/home/hao/bth_tetris/src/game_object.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o"
+  "/home/hao/bth_tetris/src/key_manager.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o"
   "/home/hao/bth_tetris/src/main.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/main.cpp.o"
   "/home/hao/bth_tetris/src/resource_manager.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.o"
+  "/home/hao/bth_tetris/src/scene_manager.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o"
   "/home/hao/bth_tetris/src/shader.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/shader.cpp.o"
   "/home/hao/bth_tetris/src/sprite_renderer.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/sprite_renderer.cpp.o"
   "/home/hao/bth_tetris/src/texture.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.o"
+  "/home/hao/bth_tetris/src/timer.cpp" "/home/hao/bth_tetris/src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

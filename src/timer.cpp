@@ -1,4 +1,4 @@
-#include <Timer.h>
+#include <timer.h>
 
 float Timer::get_deltaTime()
 {
@@ -7,23 +7,24 @@ float Timer::get_deltaTime()
 
 void Timer::init_timer()
 {
+    delta_time = 0.0f;
+    last_frame = 0.0f;
     remain_time = tic_time;
-    lastFrame = glfwGetTime();
+    last_frame = glfwGetTime();
 }
 
-bool timer_event()
+bool Timer::timer_event()
 {
-    float curFrame = glfwGetTime();
-    deltaTime = curFrame - lastFrame;
-    lastFrame = curFrame;
-    
-    remain_time -= deltaTime;
+    float cur_frame = glfwGetTime();
+    delta_time = cur_frame - last_frame;
+    last_frame = cur_frame;
+   
+    remain_time -= delta_time;
     if(remain_time>0)	return true;
     
     remain_time += tic_time;
 
     //event
-
 
     return true;
 }

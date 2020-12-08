@@ -6,10 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/hao/bth_tetris/src/block_manager.cpp
+block_manager.h
+-
+
 /home/hao/bth_tetris/src/game.cpp
 game.h
 -
 resource_manager.h
+-
+
+/home/hao/bth_tetris/src/key_manager.cpp
+key_manager.h
 -
 
 /home/hao/bth_tetris/src/main.cpp
@@ -18,6 +26,32 @@ my_header.h
 game.h
 -
 resource_manager.h
+-
+
+/home/hao/bth_tetris/src/resource_manager.cpp
+resource_manager.h
+-
+stb_image.h
+-
+
+/home/hao/bth_tetris/src/scene_manager.cpp
+scene_manager.h
+-
+
+/home/hao/bth_tetris/src/shader.cpp
+shader.h
+-
+
+/home/hao/bth_tetris/src/sprite_renderer.cpp
+sprite_renderer.h
+-
+
+/home/hao/bth_tetris/src/texture.cpp
+texture.h
+-
+
+/home/hao/bth_tetris/src/timer.cpp
+timer.h
 -
 
 glfw-3.3.2/include/GLFW/glfw3.h
@@ -72,6 +106,10 @@ inttypes.h
 stdint.h
 -
 
+include/block_manager.h
+my_header.h
+-
+
 include/game.h
 my_header.h
 -
@@ -81,9 +119,19 @@ sprite_renderer.h
 -
 timer.h
 -
+scene_manager.h
+-
+key_manager.h
+-
 
 include/glad/glad.h
 KHR/khrplatform.h
+-
+
+include/key_manager.h
+my_header.h
+-
+block_manager.h
 -
 
 include/my_header.h
@@ -96,6 +144,10 @@ string
 sstream
 -
 fstream
+-
+stdlib.h
+-
+time.h
 -
 glad/glad.h
 -
@@ -118,6 +170,18 @@ include/texture.h
 shader.h
 include/shader.h
 
+include/scene_manager.h
+my_header.h
+-
+sprite_renderer.h
+-
+texture.h
+-
+resource_manager.h
+-
+block_manager.h
+-
+
 include/shader.h
 my_header.h
 -
@@ -130,12 +194,46 @@ include/texture.h
 shader.h
 include/shader.h
 
+include/stb_image.h
+stb_image.h
+include/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
 include/texture.h
 my_header.h
 -
 
 include/timer.h
 my_header.h
+-
+block_manager.h
 -
 
 include/variable.h

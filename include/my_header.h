@@ -5,6 +5,8 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <stdlib.h>
+#include <time.h>
 
 #include <glad/glad.h>
 #include <glm/glm.hpp>

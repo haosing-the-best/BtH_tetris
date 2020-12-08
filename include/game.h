@@ -14,6 +14,8 @@
 #include <resource_manager.h>
 #include <sprite_renderer.h>
 #include <timer.h>
+#include <scene_manager.h>
+#include <key_manager.h>
 // Represents the current state of the game
 enum GameState {
     GAME_ACTIVE,
@@ -35,8 +37,12 @@ private:
     bool Init_gl();
     bool Init_Shader();
     bool Load_Texture();
-    Timer my_timer;
+    bool Init_tools();
     GLFWwindow * window;
+    
+    Timer* my_timer;
+    scene_manager* my_scene;
+    key_manager* my_key;
 public:
     // game state
     GameState               State;	
@@ -45,9 +51,6 @@ public:
     static bool Init();
     // game loop
     static int run();
-    void ProcessInput(float dt);
-    void Update(float dt);
-    void Render();
 };
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);

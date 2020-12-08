@@ -171,6 +171,33 @@ BtH_tetris-0.0.out/fast:
 	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/build
 .PHONY : BtH_tetris-0.0.out/fast
 
+block_manager.o: block_manager.cpp.o
+
+.PHONY : block_manager.o
+
+# target to build an object file
+block_manager.cpp.o:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.o
+.PHONY : block_manager.cpp.o
+
+block_manager.i: block_manager.cpp.i
+
+.PHONY : block_manager.i
+
+# target to preprocess a source file
+block_manager.cpp.i:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.i
+.PHONY : block_manager.cpp.i
+
+block_manager.s: block_manager.cpp.s
+
+.PHONY : block_manager.s
+
+# target to generate assembly for a file
+block_manager.cpp.s:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/block_manager.cpp.s
+.PHONY : block_manager.cpp.s
+
 game.o: game.cpp.o
 
 .PHONY : game.o
@@ -198,33 +225,6 @@ game.cpp.s:
 	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/game.cpp.s
 .PHONY : game.cpp.s
 
-game_object.o: game_object.cpp.o
-
-.PHONY : game_object.o
-
-# target to build an object file
-game_object.cpp.o:
-	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.o
-.PHONY : game_object.cpp.o
-
-game_object.i: game_object.cpp.i
-
-.PHONY : game_object.i
-
-# target to preprocess a source file
-game_object.cpp.i:
-	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.i
-.PHONY : game_object.cpp.i
-
-game_object.s: game_object.cpp.s
-
-.PHONY : game_object.s
-
-# target to generate assembly for a file
-game_object.cpp.s:
-	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/game_object.cpp.s
-.PHONY : game_object.cpp.s
-
 glad.o: glad.c.o
 
 .PHONY : glad.o
@@ -251,6 +251,33 @@ glad.s: glad.c.s
 glad.c.s:
 	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/glad.c.s
 .PHONY : glad.c.s
+
+key_manager.o: key_manager.cpp.o
+
+.PHONY : key_manager.o
+
+# target to build an object file
+key_manager.cpp.o:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.o
+.PHONY : key_manager.cpp.o
+
+key_manager.i: key_manager.cpp.i
+
+.PHONY : key_manager.i
+
+# target to preprocess a source file
+key_manager.cpp.i:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.i
+.PHONY : key_manager.cpp.i
+
+key_manager.s: key_manager.cpp.s
+
+.PHONY : key_manager.s
+
+# target to generate assembly for a file
+key_manager.cpp.s:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/key_manager.cpp.s
+.PHONY : key_manager.cpp.s
 
 main.o: main.cpp.o
 
@@ -305,6 +332,33 @@ resource_manager.s: resource_manager.cpp.s
 resource_manager.cpp.s:
 	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/resource_manager.cpp.s
 .PHONY : resource_manager.cpp.s
+
+scene_manager.o: scene_manager.cpp.o
+
+.PHONY : scene_manager.o
+
+# target to build an object file
+scene_manager.cpp.o:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.o
+.PHONY : scene_manager.cpp.o
+
+scene_manager.i: scene_manager.cpp.i
+
+.PHONY : scene_manager.i
+
+# target to preprocess a source file
+scene_manager.cpp.i:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.i
+.PHONY : scene_manager.cpp.i
+
+scene_manager.s: scene_manager.cpp.s
+
+.PHONY : scene_manager.s
+
+# target to generate assembly for a file
+scene_manager.cpp.s:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/scene_manager.cpp.s
+.PHONY : scene_manager.cpp.s
 
 shader.o: shader.cpp.o
 
@@ -387,6 +441,33 @@ texture.cpp.s:
 	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
+timer.o: timer.cpp.o
+
+.PHONY : timer.o
+
+# target to build an object file
+timer.cpp.o:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.o
+.PHONY : timer.cpp.o
+
+timer.i: timer.cpp.i
+
+.PHONY : timer.i
+
+# target to preprocess a source file
+timer.cpp.i:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.i
+.PHONY : timer.cpp.i
+
+timer.s: timer.cpp.s
+
+.PHONY : timer.s
+
+# target to generate assembly for a file
+timer.cpp.s:
+	cd /home/hao/bth_tetris && $(MAKE) -f src/CMakeFiles/BtH_tetris-0.0.out.dir/build.make src/CMakeFiles/BtH_tetris-0.0.out.dir/timer.cpp.s
+.PHONY : timer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -400,21 +481,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BtH_tetris-0.0.out"
+	@echo "... block_manager.o"
+	@echo "... block_manager.i"
+	@echo "... block_manager.s"
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"
-	@echo "... game_object.o"
-	@echo "... game_object.i"
-	@echo "... game_object.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
+	@echo "... key_manager.o"
+	@echo "... key_manager.i"
+	@echo "... key_manager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... resource_manager.o"
 	@echo "... resource_manager.i"
 	@echo "... resource_manager.s"
+	@echo "... scene_manager.o"
+	@echo "... scene_manager.i"
+	@echo "... scene_manager.s"
 	@echo "... shader.o"
 	@echo "... shader.i"
 	@echo "... shader.s"
@@ -424,6 +511,9 @@ help:
 	@echo "... texture.o"
 	@echo "... texture.i"
 	@echo "... texture.s"
+	@echo "... timer.o"
+	@echo "... timer.i"
+	@echo "... timer.s"
 .PHONY : help
 
 
